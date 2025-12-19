@@ -17,18 +17,38 @@ public class Account{
         this.accountNumber = new IDGenerator().gentrrateAccountNumber(accounttype);
     }
 
-    public String Deposit(double amount){
-        balance += amount;
-        return amount+" is Deposited";
+    public String getAccountNumber() {
+        return accountNumber;
     }
 
-    public String Withdraw(double amount){
-        if(amount>balance){
-            return "Insufficient balance";
-        }
-        balance -=amount;
-        return amount+" is withdrawn" ;
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
     }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public Accounttype getAccounttype() {
+        return accounttype;
+    }
+
+    public void setAccounttype(Accounttype accounttype) {
+        this.accounttype = accounttype;
+    }
+
 
     @Override
     public String toString() {
