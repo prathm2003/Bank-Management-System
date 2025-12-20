@@ -29,9 +29,6 @@ public class Account{
         return user;
     }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
 
     public double getBalance() {
         return balance;
@@ -44,11 +41,6 @@ public class Account{
     public Accounttype getAccounttype() {
         return accounttype;
     }
-
-    public void setAccounttype(Accounttype accounttype) {
-        this.accounttype = accounttype;
-    }
-
 
     @Override
     public String toString() {

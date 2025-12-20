@@ -8,5 +8,6 @@ import java.util.HashMap;
 public class BankRepository {
     public static HashMap<String, Account> account = new HashMap<>();
 
-    public static ArrayList<String> transactions= new ArrayList<>();
+    public static HashMap<String ,ArrayList<String>> transactions= new HashMap<>();
+
 }
